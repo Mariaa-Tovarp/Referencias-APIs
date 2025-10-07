@@ -12,29 +12,34 @@
       color: #333;
       line-height: 1.6;
     }
+
     header {
       background-color: #b22222;
       color: white;
       text-align: center;
-      padding: 30px 10px;
+      padding: 25px 8px;
       border-bottom: 5px solid #7a1515;
     }
+
     header h1 {
       margin: 0;
       font-size: 1.8em;
     }
+
     header p {
       font-size: 1em;
       margin: 5px 0 0 0;
     }
+
     main {
       max-width: 900px;
       margin: 40px auto;
       background: white;
       padding: 30px 40px;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
+
     h2 {
       color: #b22222;
       text-align: center;
@@ -43,10 +48,12 @@
       padding-bottom: 5px;
       margin-bottom: 30px;
     }
+
     ul {
       list-style: none;
       padding: 0;
     }
+
     li {
       margin-bottom: 25px;
       background: #f1f1f1;
@@ -54,23 +61,82 @@
       padding: 15px;
       border-radius: 8px;
     }
+
     a {
       color: #0a84ff;
       text-decoration: none;
+      word-wrap: break-word;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
     footer {
       text-align: center;
       font-size: 0.9em;
       color: #555;
       margin-top: 40px;
-      padding: 20px 0;
+      padding: 20px 10px;
     }
-    .icon {
-      margin-right: 8px;
-      font-size: 1.2em;
+
+    /* ---- Diseño responsive ---- */
+    @media (max-width: 768px) {
+      main {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      header {
+        padding: 20px 10px;
+      }
+
+      header h1 {
+        font-size: 1.4em;
+      }
+
+      header p {
+        font-size: 0.9em;
+      }
+
+      h2 {
+        font-size: 1.2em;
+        text-align: center;
+      }
+
+      li {
+        font-size: 0.95em;
+        padding: 12px;
+      }
+
+      footer {
+        font-size: 0.85em;
+        padding: 15px 8px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.2em;
+      }
+
+      header p {
+        font-size: 0.85em;
+      }
+
+      main {
+        margin: 10px;
+        padding: 15px;
+      }
+
+      li {
+        font-size: 0.9em;
+        padding: 10px;
+      }
+
+      footer {
+        font-size: 0.8em;
+      }
     }
   </style>
 </head>
@@ -79,6 +145,7 @@
     <h1>Referencias del Proyecto</h1>
     <p>APIs en el Sector Hotelero — Universidad Libre | Semillero de Calidad, Sostenibilidad y Salud Laboral</p>
   </header>
+
   <main>
     <h2>Referencias</h2>
     <ul>
@@ -89,6 +156,7 @@
       <li>💻 Wynn, M., & Lam, C. (2023). Digitalisation and IT Strategy in the Hospitality Industry. <em>Systems, 11(10)</em>, 501. <a href="https://doi.org/10.3390/systems11100501" target="_blank">https://doi.org/10.3390/systems11100501</a></li>
     </ul>
   </main>
+
   <footer>
     © 2025 Universidad Libre — Ingeniería de Sistemas | Presentado en el Encuentro Nacional RedCOLSI
   </footer>
